@@ -3,13 +3,7 @@ sih-2025 project electronics
 
 
 
-Perfect! ✅ Based on your confirmations, here’s a **complete, professional README** including everything: overview, ASCII connection diagram, formulas, explanations, SSH guide, and how to modify it.
 
-You can save this as `README.md` in your project root.
-
----
-
-```markdown
 # 💧 Smart Water Quality Monitoring System
 
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-Project-red?logo=raspberrypi)
