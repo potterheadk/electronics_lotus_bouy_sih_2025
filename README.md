@@ -1,8 +1,4 @@
-Here’s your **final, cleaned, and perfectly formatted `README.md`**, fully GitHub-ready — professional, readable, and visually appealing 👇
 
----
-
-````markdown
 # 💧 Smart Water Quality Monitoring using Raspberry Pi
 
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-Project-red?logo=raspberrypi)
