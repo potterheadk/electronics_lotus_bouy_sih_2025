@@ -229,12 +229,4 @@ python3 main.py
 * 🤖 TinyML-based water-quality classification
 * ☁️ IoT cloud integration (ThingsBoard, Firebase, AWS IoT)
 
----
 
-## 🧾 License
-
-**MIT License © 2025**
-Developed by *Electronics Lotus Buoy — SIH 2025 Team*
-
-setup seamless on any Raspberry Pi.
-```
