@@ -63,6 +63,84 @@ A0  <- Turbidity AO
 A1  <- pH AO
 
 ````
+Perfect 🌊 — since your setup includes **turbidity**, **pH**, and **temperature** sensors connected to a **Raspberry Pi**, here’s a complete and professional **README.md** you can include in your GitHub repo or documentation folder.
+
+It’s written to be clear for both beginners and developers who want to replicate or extend your water-quality monitoring system.
+
+---
+
+# 💧 Smart Water Quality Monitoring using Raspberry Pi
+
+### 🧠 Sensors: Turbidity | pH | Temperature (DS18B20)
+
+### 🧩 ADC: ADS1115 (I²C Interface)
+
+### 🐍 Language: Python 3
+
+### ⚙️ Platform: Raspberry Pi 3B/3B+/4
+
+---
+
+## 📜 Overview
+
+This project measures **real-time water quality parameters** using affordable sensors and a Raspberry Pi.
+It captures:
+
+* **Turbidity (NTU)** – water clarity
+* **pH level** – acidity/basicity
+* **Temperature (°C)** – water temperature
+
+All readings are displayed live in the terminal, and can easily be extended to a dashboard or cloud platform (like ThingsBoard, Firebase, or MQTT broker).
+
+---
+
+## 🧰 Hardware Components
+
+| Component             | Description                 | Quantity |
+| --------------------- | --------------------------- | -------- |
+| Raspberry Pi 3B/3B+/4 | Main controller             | 1        |
+| ADS1115               | 16-bit ADC module (I²C)     | 1        |
+| Turbidity Sensor      | Analog water clarity sensor | 1        |
+| pH Sensor             | Analog pH 0–14 sensor       | 1        |
+| DS18B20               | Digital temperature sensor  | 1        |
+| 4.7kΩ Resistor        | Pull-up for DS18B20         | 1        |
+| Jumper Wires          | Male–Female and Male–Male   | —        |
+| Breadboard            | For easy wiring             | 1        |
+
+---
+
+## ⚙️ Pin Connections
+
+### **ADS1115 → Raspberry Pi (I²C)**
+
+| ADS1115 Pin | Raspberry Pi Pin | Function  |
+| ----------- | ---------------- | --------- |
+| VCC         | 3.3V             | Power     |
+| GND         | GND              | Ground    |
+| SDA         | GPIO 2 (Pin 3)   | I²C Data  |
+| SCL         | GPIO 3 (Pin 5)   | I²C Clock |
+
+---
+
+### **Sensors → ADS1115**
+
+| Sensor           | Signal Pin | ADS1115 Channel | Power    |
+| ---------------- | ---------- | --------------- | -------- |
+| Turbidity Sensor | AO         | A0              | VCC = 5V |
+| pH Sensor        | AO         | A1              | VCC = 5V |
+
+---
+
+### **DS18B20 → Raspberry Pi**
+
+| DS18B20 Pin | Connects To    | Notes                                          |
+| ----------- | -------------- | ---------------------------------------------- |
+| VCC         | 3.3V           | —                                              |
+| GND         | GND            | —                                              |
+| DATA        | GPIO 4 (Pin 7) | 4.7kΩ pull-up resistor between **DATA ↔ 3.3V** |
+
+---
+
 
 **Notes:**  
 - DS18B20: Yellow DATA line → GPIO 4, with 4.7kΩ pull-up to 3.3V.  
